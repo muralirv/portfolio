@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="typing">
+
+        <h2><span class="type"></span></h2>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".type", {
+                strings: ['Web Designer', 'Web Developer..', ],
+                typeSpeed: 90,
+                backSpeed: 100,
+                loop: true
+            });
+        </script>
+    </div>
+    <!-- 
+        <script>
+                const text=document.querySelector(".second");
+                const textload=()=>{
+                    setTimeout(()=>{
+                        text.textContent="Designer";
+                    },0);
+                    setTimeout(()=>{
+                        text.textContent="Developer";
+                    },4000);
+                    setTimeout(()=>{
+                        text.textContent="Programmer";
+                    },12000);
+                }
+                textload();
+                setInterval(textload,12000);
+            </script>
+     -->
+    
+</body>
+</html>

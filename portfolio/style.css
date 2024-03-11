@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300&family=Rubik+Glitch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: #1b9bff;
+}
+.container{
+    border: 1px solid;
+    height: 100vh;
+}
+/*Logo*/
+.container .logo{
+    position:absolute;
+    top: 25px;
+    left:150px;
+    position: fixed;
+    
+}
+.container .logo h2{
+    color: red;
+    font-size: 40px;
+    position: fixed;
+    
+}
+.container .logo span{
+    color: white;
+    position: fixed;
+   
+}
+
+/*nav Bar*/
+.container header .nav ul{
+    display: flex;
+    list-style: none;
+    justify-content:right;
+    margin-top: 30px;
+    margin-left: 120px;
+    position: fixed;
+    left: 620px;
+    bottom: 530px;
+}
+.container header .nav ul li{
+    margin: 40px 10px;
+    padding: 10px;
+    color: white;
+}
+/*header anchor*/
+.container header .nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    position:relative;   /* relative used for a below come the underline */
+}
+/* animation anchar tag */
+.container header .nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #1b9bff;
+    transition: all .5s;
+}
+.container header .nav ul li a:hover::before{
+    width: 100%;
+} */
+.container header .nav{
+    background-color: rgb(5, 5, 5);
+    position: fixed;
+}
+.container .div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .div .content{
+    position: absolute;
+    top: 310px;
+    left: 250px;
+    z-index: -1;
+}
+.container .div .content span{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container .div .video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9)
+{
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+/*content of tne page mean Name*/
+.container .content{
+    
+    text-align: center;
+}
+.content .text{
+    color: #1b9bff;
+    font-size: 40px;
+    font-weight: 600;
+}
+.content .text.first{
+    color: white;
+}
+.container header{
+    width: 100vw;
+    height: 100px;
+    background-color: #34495e;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+/*section from about*/
+.section1{
+    margin:70px 100px;
+    width: 1150px;
+    height: 650px;
+    box-shadow: 10px;
+}
+/*left side*/
+.section1 .left{
+    width:560px;
+    height: 650px;
+    background-color: white;
+    float: left;
+}
+/*image*/
+.section1 .left .img img{
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.section1 .left .name p{
+    padding: 10px;
+}
+.section1 .left .name{
+    margin-top: 50px;
+}
+.section1 .left .skill h3{
+    margin-left: 40px;
+}
+/* using display flex because overflow in menu */
+.section1 .one{
+    display: flex; 
+}
+
+.section1 .left .skill .c{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.section1 .left .skill .html{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.section1 .left .skill .css{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.section1 .left .skill .sql{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+/*move the span tage from left*/
+.section1 .left .skill .c span{
+    margin-left:380px ;
+}
+.section1 .left .skill .html span{
+    margin-left:350px ;
+}
+.section1 .left .skill .css span{
+    margin-left:360px ;
+}
+.section1 .left .skill .sql span{
+    margin-left:360px ;
+}
+
+/*progress width and heigth increase*/
+.section1 .left .skill .c progress{
+   width: 430px;
+   height: 25px ;
+}
+.section1 .left .skill .html progress{
+    width: 430px;
+    height: 25px ;
+ }
+ .section1 .left .skill .css progress{
+    width: 430px;
+    height: 25px ;
+ }
+ .section1 .left .skill .sql progress{
+    width: 430px;
+    height: 25px ;
+ }
+
+ .section1 .left .skill .c p{
+    margin-top: 20px;
+    margin-bottom:10px ;
+}
+.section1 .left .skill .html p{
+    margin-bottom:10px ;
+}
+.section1 .left .skill .css p{
+    margin-bottom:10px ;
+}
+.section1 .left .skill .sql p{
+    margin-bottom:10px ;
+}
+.section1 .right{
+    width:589px;
+    height: 650px;
+    background-color: white;
+    float:right;
+}
+.section1 .right .ob{
+    margin: 60px 10px 30px;
+}
+.section1 .right .ob h3{
+    font-size: 25px;
+}
+.section1 .right .ob p{
+    margin: 20px 10px 5px;
+    font-size: 20px;
+}
+.section1 .right .ed{
+    margin: 60px 10px 30px;
+}
+.section1 .right .ed h3{
+    font-size: 25px;
+}
+.section1 .right .ed ul{
+    margin: 30px;
+}
+.section1 .right .ed ul li{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.ser{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ser h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.section2{
+    margin:70px 100px;
+    width: 1150px;
+    height: 792px;
+    box-shadow: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: row;
+}
+
+.section2 i{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 90px;
+    text-align: center;
+    border: 10px solid rgb(255, 94, 0);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.section2 .webdesign{
+    border-radius: 70px 0;
+    width:350px;
+    height:370px;
+    background-color: white;
+    margin-right: 20px;
+}
+.section2 .webdev{
+    border-radius: 70px 0;
+    width:350px;
+    height:370px;
+    background-color: white;
+    margin-right: 20px;
+}
+.section2 .photo{
+    border-radius: 70px 0;
+    width:350px;
+    height:370px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.section2 .response{
+    border-radius: 70px 0;
+    width:350px;
+    height:370px;
+    background-color: white;
+    margin-right: 20px;
+}
+.section2 .grap{
+    border-radius: 70px 0;
+    width:350px;
+    height:370px;
+    background-color: white;
+    
+}
+
+.section2 .webdev h3{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.section2 .webdesign h3{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.section2 .photo h3{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.section2 .grap h3{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.section2 .response h3{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* not complete */
+.section2 .webdesign:hover i{
+    background-color: rgb(255, 94, 0);
+    border-color: rgb(255, 145, 81);
+    color: white;
+    box-shadow:5px 5px 5px black;
+}
+.section2 .webdev:hover i{
+    background-color: rgb(255, 94, 0);
+    border-color: rgb(255, 145, 81);
+    color: white;
+    box-shadow:5px 5px 5px black;
+}
+.section2 .photo:hover i{
+    background-color: rgb(255, 94, 0);
+    border-color: rgb(255, 145, 81);
+    color: white;
+    box-shadow:5px 5px 5px black;
+}
+.section2 .grap:hover i{
+    background-color: rgb(255, 94, 0);
+    border-color: rgb(255, 145, 81);
+    color: white;
+    box-shadow:5px 5px 5px black;
+}
+.section2 .response:hover i{
+    background-color: rgb(255, 94, 0);
+    border-color: rgb(255, 145, 81);
+    color: white;
+    box-shadow:5px 5px 5px black;
+}
+
+.port{
+    text-align: center;
+}
+.port h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.section4{
+    margin:70px 100px;
+    width: 1150px;
+    height: 792px;
+    box-shadow: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section4 .img1{
+    width:350px;
+    height:370px;
+    background-color: white;    
+}
+.section4 img{
+    width:350px;
+    height:240px;
+    margin-bottom: 20px;
+    transition: 1.4s;
+}
+.section4 .img2{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section4 .img3{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section4 .img4{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section4 .img5{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section4 .img6{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section4 p{
+    font-size: 25px;
+    margin: 10px 15px;
+}
+.section4 a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 15px 20px;
+}
+.section4 i{
+    margin-left: 190px;
+    border: 1px solid black;
+}
+/* hover effect with imag */
+.section4 img:hover{
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+/* section 5 */
+.section5{
+    margin:70px 100px;
+    width: 1150px;
+    height: 480px;
+    box-shadow: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section5 .img1{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section5 img{
+    width:350px;
+    height:230px;
+    margin: 0;
+}
+.section5 .img2{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section5 .img3{
+    width:350px;
+    height:370px;
+    background-color: white;
+}
+.section5 .img1 .lo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.section5 .img2 .lo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.section5 .img3 .lo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.section5 h3{
+    margin: 10px;
+}
+.section5 p{
+    margin: 10px;
+    font-size: 15px;
+}
+.section5 button{
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(253, 121, 45);
+    border-radius: 4px;
+    margin: 0px;
+}
+.section5 button:hover{
+    background-color: #34495e;
+}
+.section5 .lo{
+    width:350px;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    margin-top: 31px;
+}
+.section5 .lo i{
+    margin-top: 7px;
+    margin-left: 90px;
+}
+.section5 .lo p{
+    margin-top: 14px;
+}
+/* section 6 */
+.section6{
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(#2E3192,#1BFFFF);
+    border: 1px solid black;
+}
+.section6 .form{
+    width: 80%;
+    height: 640px;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    border-radius: 55px 0 55px 0;
+}
+.section6 .form .left{
+    width: 50%;
+    height: 640px;
+}
+.section6 h2{
+    margin: 60px 60px 40px 60px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.section6 .form .left input{
+    margin: 10px 90px;
+    width: 70%;
+    height: 30px;
+}
+.section6 .form .left label{
+    font-size: 20px;
+    margin: 0px 65px;
+}
+.section6 .form .left textarea{
+    margin-left: 90px;
+    width: 350px;
+}
+.section6 .form .left button{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1b9bff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 60px;
+}
+.section6 .form .left button:hover{
+    background-color: #2E3192;
+}
+.section6 .form .right{
+    width: 50%;
+    height: 640px;
+}
+.section6 .form .right h2{
+    margin: 60px 30px 20px 30px;
+}
+.section6 .form .right p{
+    margin: 30px;
+}
+.section6 .form .right .icon i{
+    margin-left: 30px;
+    color: #1b9bff;
+}
+.section6 .form .right .icon i p{
+    margin: 10px;
+    position: relative;
+    left: 20px;
+    bottom: 25px;
+    font-weight: bold;
+    color: black;
+}
+.section6 .form .right .icon2 i{
+    margin-top: 30px;
+    margin-left: 40px;
+    color: #1b9bff;
+}
+.section6 .form .right .icon2 i:hover{
+    color: #2E3192;
+}
+.section6 footer p{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+#about{
+    width: 100%;
+    height: 710px;
+    border: 1px solid #1b9bff;
+}
+#services{
+    border: 1px solid #1b9bff;
+    margin-top: 10px;
+    width: 100%;
+    height: 1030px;
+}
+#work{
+    border: 1px solid #1b9bff;
+}
+.div .content .typing{
+    
+    margin: 0;
+    padding: 0 ;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    bottom: 5px;
+}
+.iam{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    right: 80px;
+    font-weight: bold;
+}
+.div .content .typing h2{
+    color: #1b9bff;
+    font-weight: bold;
+    font-size: 23px;
+    right: 0;
+}
+
+/* media query */
+
+@media only screen and(min-width:576px){
+    #about{
+        width: 100%;
+        height: 1150px;
+    }
+    #services{
+        border: 1px solid #1b9bff;
+        margin-top: 10px;
+        width: 100%;
+        height: 1030px;
+    }
+    #work{
+        border: 1px solid #1b9bff;
+    }
+    .section1{
+        margin:20px 20px;
+        width: 393px;
+        height: 1050px;
+        box-shadow: 10px;
+        border: 1px solid;
+    }
+    /*left side*/
+    .section1 .left{
+        width:390px;
+        height: 470px;
+        background-color: white;
+        float: none;
+    }
+    /*image*/
+    .section1 .left .img img{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    
+    .section1 .left .name p{
+        padding: 6px;
+        font-size: 13px;
+    }
+    .section1 .left .name{
+        margin-top: 12px;
+        margin-left: 5px;
+    }
+    .section1 .left .skill h3{
+        margin-left: 25px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    /* using display flex because overflow in menu */
+    .section1 .one{
+        display: flex; 
+        flex-wrap: column;
+    }
+    
+    .section1 .left .skill .c{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .section1 .left .skill .html{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .section1 .left .skill .css{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .section1 .left .skill .sql{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    
+    /*move the span tage from left*/
+    .section1 .left .skill .c span{
+        margin-left:250px;
+    }
+    .section1 .left .skill .html span{
+        margin-left:220px ;
+    }
+    .section1 .left .skill .css span{
+        margin-left:230px ;
+    }
+    .section1 .left .skill .sql span{
+        margin-left:230px ;
+    }
+    
+    /*progress width and heigth increase*/
+    .section1 .left .skill .c progress{
+       width: 300px;
+       height: 25px ;
+    }
+    .section1 .left .skill .html progress{
+        width: 300px;
+        height: 25px ;
+     }
+     .section1 .left .skill .css progress{
+        width: 300px;
+        height: 25px ;
+     }
+     .section1 .left .skill .sql progress{
+        width: 300px;
+        height: 25px ;
+     }
+    
+     .section1 .left .skill .c p{
+        margin-top: 20px;
+        margin-bottom:7px ;
+        font-size: 15px;
+    }
+    .section1 .left .skill .html p{
+        margin-bottom:10px ;
+        font-size: 15px;
+    }
+    .section1 .left .skill .css p{
+        margin-bottom:10px ;
+        font-size: 15px;
+    }
+    .section1 .left .skill .sql p{
+        margin-bottom:10px ;
+        font-size: 15px;
+    }
+    .section1 .right{
+        margin: 0;
+        width:100%;
+        height: 480px;
+        background-color: white;
+        float:right;
+        
+    }
+    .section1 .right .ob{
+        margin:20px 30px;
+    }
+    .section1 .right .ob h3{
+        font-size: 20px;
+    }
+    .section1 .right .ob p{
+        margin: 20px 10px 5px;
+        font-size: 17px;
+        text-align: justify;
+    }
+    .section1 .right .ed{
+        margin: 30px 20px 30px;
+    }
+    .section1 .right .ed h3{
+        font-size: 20px;
+    }
+    .section1 .right .ed ul{
+        margin: 20px;
+    }
+    .section1 .right .ed ul li{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}

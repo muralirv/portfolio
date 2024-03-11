@@ -1,0 +1,54 @@
+/* .main{
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap:wrap;
+    background-image: radial-gradient(black,white);
+    backg
+}
+.main img:hover{
+    transform: scale(1.1,1.1);
+    transition: 1.5s;
+    transform: translate(50%);
+}
+.main img:nth-child(odd):hover{
+    transform: rotate(-30deg);
+    transition: 2s;
+} 
+body{
+    background-image: url(https://t4.ftcdn.net/jpg/04/42/21/53/360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color: green;
+    background-blend-mode:overlay;
+}
+*/
+
+.name1{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+.name1 i{
+    margin-top: 60px;
+    padding: 10px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+.name2{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+.name2 i{
+    margin-top: 60px;
+    padding: 10px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+
